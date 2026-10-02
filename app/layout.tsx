@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AutoBI — L\'analyse de données, enfin accessible à tous',
     description: 'Importez votre fichier Excel et obtenez un dashboard IA en 30 secondes.',
-    url: 'https://autobi-cg.com',
+    url: 'https://autobi-app.com',
     siteName: 'AutoBI',
     locale: 'fr_FR',
     type: 'website',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: 'Dashboard interactif généré en 30 secondes à partir de vos données Excel.',
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://autobi-cg.com' },
+  alternates: { canonical: 'https://autobi-app.com' },
 };
 
 export default function RootLayout({

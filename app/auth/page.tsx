@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Mail, Lock, User, ArrowLeft, Loader2, CheckCircle2, ShieldCheck } from 'lucide-react';
 
 export default function AuthPage() {
-  const [mode, setMode] = useState<'login' | 'register'>('register');
+  const [mode, setMode] = useState<'login' | 'register'>('login');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [form, setForm] = useState({ email: '', password: '', firstName: '', lastName: '' });
@@ -141,9 +141,6 @@ export default function AuthPage() {
         </div>
       </div>
 
-      <p className="mt-8 text-xs text-gray-400 font-bold uppercase tracking-widest">
-        Paiements sécurisés via OpenPay Congo
-      </p>
     </main>
   );
 }
