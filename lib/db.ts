@@ -1,5 +1,5 @@
 import mysql from 'mysql2/promise';
-require('dotenv').config();
+
 
 export const dbConfig = {
   host: process.env.MYSQLHOST || 'localhost',

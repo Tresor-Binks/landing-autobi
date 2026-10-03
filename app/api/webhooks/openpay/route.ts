@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import mysql from 'mysql2/promise';
-require('dotenv').config();
+
 
 const dbConfig = {
   host: process.env.MYSQLHOST || 'localhost',

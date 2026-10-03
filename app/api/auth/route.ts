@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import mysql from 'mysql2/promise';
 import argon2 from 'argon2';
-require('dotenv').config();
+
 
 // ============================================================
 // CONFIGURATION MYSQL
