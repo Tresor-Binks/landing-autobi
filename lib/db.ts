@@ -1,11 +1,12 @@
 import mysql from 'mysql2/promise';
+require('dotenv').config();
 
 export const dbConfig = {
-  host: 'localhost',
-  user: 'root',
-  password: 'root',
-  database: 'autobi',
-  port: 3306,
+  host: process.env.MYSQLHOST || 'localhost',
+  user: process.env.MYSQLUSER || 'root',
+  password: process.env.MYSQLPASSWORD || 'root',
+  database: process.env.MYSQLDATABASE || 'autobi',
+  port: Number(process.env.MYSQLPORT) || 3307,
 };
 
 // On crée un pool de connexions (plus performant pour une API)

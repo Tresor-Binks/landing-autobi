@@ -1,17 +1,18 @@
 import { NextResponse } from 'next/server';
 import mysql from 'mysql2/promise';
 import argon2 from 'argon2';
+require('dotenv').config();
 
 // ============================================================
 // CONFIGURATION MYSQL
 // ============================================================
 
 const dbConfig = {
-  host: 'localhost',
-  user: 'root',
-  password: 'root',
-  database: 'autobi',
-  port: 3307,
+  host: process.env.MYSQLHOST || 'localhost',
+  user: process.env.MYSQLUSER || 'root',
+  password: process.env.MYSQLPASSWORD || 'root',
+  database: process.env.MYSQLDATABASE || 'autobi',
+  port: Number(process.env.MYSQLPORT) || 3307,
 };
 
 // ============================================================

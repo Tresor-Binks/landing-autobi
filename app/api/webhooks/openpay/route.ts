@@ -1,12 +1,13 @@
 import { NextResponse } from 'next/server';
 import mysql from 'mysql2/promise';
+require('dotenv').config();
 
 const dbConfig = {
-  host: 'localhost',
-  user: 'root',
-  password: 'root',
-  database: 'autobi',
-  port: 3307,
+  host: process.env.MYSQLHOST || 'localhost',
+  user: process.env.MYSQLUSER || 'root',
+  password: process.env.MYSQLPASSWORD || 'root',
+  database: process.env.MYSQLDATABASE || 'autobi',
+  port: Number(process.env.MYSQLPORT) || 3307,
 };
 
 export async function POST(req: Request) {
