@@ -13,7 +13,7 @@ export default function Contact() {
             <p className="text-gray-400">Une question sur les tarifs ou un besoin d'accompagnement sur Pointe-Noire ?</p>
             <div className="mt-8 space-y-4">
               <div className="flex items-center gap-4">
-                <Mail className="text-primary" /> <span>contact@autobi-app.com</span>
+                <Mail className="text-primary" /> <span>contact@get.autobi.app</span>
               </div>
               <div className="flex items-center gap-4">
                 <MessageSquare className="text-primary" /> <span>Support via WhatsApp disponible</span>

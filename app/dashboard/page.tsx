@@ -21,7 +21,7 @@ export default function ChoicePage() {
       title: "Continuer sur le Web",
       description: "Utilisez AutoBI directement dans votre navigateur.",
       icon: <Globe className="text-blue-500" size={32} />,
-      link: "https://autobi-app.com",
+      link: "https://get.autobi.app",
       buttonText: "Ouvrir l'app",
       primary: true,
     },
